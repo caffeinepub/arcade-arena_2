@@ -1,0 +1,238 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-implement-user-authentication-system-with-internet-identity-integration-allowing-users-to-sign-up-and-log-in-generating-a-unique-gamer-id-for-each-player-upon-registration",
+      "featureTitle": "Implement user authentication system with Internet Identity integration allowing users to sign up and log in, generating a unique gamer ID for each player upon registration",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-home-page-with-hero-section-displaying-title-arcade-arena-play-with-friends-online-descriptive-text-about-playing-fun-browser-games-prominent-start-playing-call-to-action-button-featured-games-section-showing-available-games-top-players-preview-displaying-highest-scoring-users-and-footer-with-social-links",
+      "featureTitle": "Build Home Page with hero section displaying title 'Arcade Arena – Play With Friends Online', descriptive text about playing fun browser games, prominent 'Start Playing' call-to-action button, featured games section showing available games, top players preview displaying highest scoring users, and footer with social links",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/HomePage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-games-page-displaying-four-playable-mini-games-snake-tic-tac-toe-memory-card-game-and-number-guessing-game-each-with-a-game-selection-interface-showing-game-title-description-and-play-button-to-launch-the-selected-game",
+      "featureTitle": "Create Games Page displaying four playable mini-games: Snake, Tic Tac Toe, Memory Card Game, and Number Guessing Game, each with a game selection interface showing game title, description, and play button to launch the selected game",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/GamesPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-playable-snake-game-with-html5-canvas-rendering-keyboard-arrow-controls-for-snake-movement-food-collection-mechanics-that-increase-snake-length-and-score-collision-detection-for-walls-and-self-collision-ending-the-game-play-button-to-start-restart-button-to-reset-real-time-score-display-and-smooth-animations",
+      "featureTitle": "Implement playable Snake game with HTML5 canvas rendering, keyboard arrow controls for snake movement, food collection mechanics that increase snake length and score, collision detection for walls and self-collision ending the game, play button to start, restart button to reset, real-time score display, and smooth animations",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/games/SnakeGame.tsx",
+        "frontend/src/hooks/useSnakeGame.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-playable-tic-tac-toe-game-with-3x3-grid-rendering-click-to-place-mechanics-alternating-between-x-and-o-win-detection-for-three-in-a-row-horizontally-vertically-or-diagonally-draw-detection-when-grid-is-full-ai-opponent-or-two-player-mode-play-button-to-start-restart-button-to-reset-score-tracking-based-on-wins-and-smooth-animations-for-piece-placement",
+      "featureTitle": "Implement playable Tic Tac Toe game with 3x3 grid rendering, click-to-place mechanics alternating between X and O, win detection for three in a row horizontally, vertically, or diagonally, draw detection when grid is full, AI opponent or two-player mode, play button to start, restart button to reset, score tracking based on wins, and smooth animations for piece placement",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/games/TicTacToeGame.tsx",
+        "frontend/src/hooks/useTicTacToe.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-playable-memory-card-game-with-grid-of-face-down-cards-click-to-flip-mechanics-revealing-card-images-matching-logic-that-keeps-matched-pairs-face-up-and-flips-non-matching-pairs-back-after-brief-display-move-counter-tracking-number-of-attempts-completion-detection-when-all-pairs-matched-play-button-to-start-restart-button-to-shuffle-and-reset-score-based-on-number-of-moves-lower-is-better-and-smooth-flip-animations",
+      "featureTitle": "Implement playable Memory Card Game with grid of face-down cards, click-to-flip mechanics revealing card images, matching logic that keeps matched pairs face-up and flips non-matching pairs back after brief display, move counter tracking number of attempts, completion detection when all pairs matched, play button to start, restart button to shuffle and reset, score based on number of moves (lower is better), and smooth flip animations",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/games/MemoryCardGame.tsx",
+        "frontend/src/hooks/useMemoryGame.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-10"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-playable-number-guessing-game-where-system-generates-random-number-within-configurable-range-e-g-1-100-player-submits-guesses-via-input-field-system-provides-feedback-too-high-too-low-or-correct-tracks-number-of-attempts-displays-guess-history-includes-play-button-to-start-new-game-with-new-random-number-restart-button-to-reset-current-game-score-based-on-number-of-guesses-lower-is-better-and-smooth-feedback-animations",
+      "featureTitle": "Implement playable Number Guessing Game where system generates random number within configurable range (e.g., 1-100), player submits guesses via input field, system provides feedback ('too high', 'too low', or 'correct'), tracks number of attempts, displays guess history, includes play button to start new game with new random number, restart button to reset current game, score based on number of guesses (lower is better), and smooth feedback animations",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/games/NumberGuessingGame.tsx",
+        "frontend/src/hooks/useNumberGuessing.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-11"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-friends-page-displaying-user-s-friends-list-with-usernames-player-ids-and-latest-scores-include-input-field-and-button-to-add-new-friends-by-entering-their-unique-gamer-id-with-validation-show-each-friend-s-most-recent-game-score-and-provide-invite-friends-functionality-to-share-user-s-own-gamer-id",
+      "featureTitle": "Create Friends Page displaying user's friends list with usernames, player IDs, and latest scores, include input field and button to add new friends by entering their unique gamer ID with validation, show each friend's most recent game score, and provide invite friends functionality to share user's own gamer ID",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/FriendsPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-12"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-leaderboard-page-with-three-tabs-for-global-leaderboard-showing-all-players-ranked-by-total-score-friends-leaderboard-showing-only-user-s-friends-ranked-by-score-and-weekly-top-players-showing-highest-scorers-from-last-7-days-each-displaying-ranking-table-with-position-username-player-id-and-score",
+      "featureTitle": "Create Leaderboard Page with three tabs for Global Leaderboard showing all players ranked by total score, Friends Leaderboard showing only user's friends ranked by score, and Weekly Top Players showing highest scorers from last 7 days, each displaying ranking table with position, username, player ID, and score",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/pages/LeaderboardPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-13"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-profile-page-displaying-user-s-username-unique-player-id-avatar-image-total-score-games-played-count-and-edit-profile-button-that-opens-modal-or-form-to-update-username-and-avatar-url",
+      "featureTitle": "Create Profile Page displaying user's username, unique player ID, avatar image, total score, games played count, and edit profile button that opens modal or form to update username and avatar URL",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/profile/EditProfileModal.tsx",
+        "frontend/src/pages/ProfilePage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-14"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-responsive-navigation-menu-accessible-on-all-pages-with-links-to-home-games-friends-leaderboard-and-profile-pages-including-mobile-hamburger-menu-for-smaller-screens-logout-button-when-user-is-authenticated-and-login-button-when-user-is-not-authenticated",
+      "featureTitle": "Implement responsive navigation menu accessible on all pages with links to Home, Games, Friends, Leaderboard, and Profile pages, including mobile hamburger menu for smaller screens, logout button when user is authenticated, and login button when user is not authenticated",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/layout/Layout.tsx",
+        "frontend/src/components/layout/Navigation.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-15"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-apply-dark-gaming-theme-design-with-black-background-000000-or-very-dark-gray-neon-blue-00d9ff-or-similar-and-purple-b931fc-or-similar-accent-colors-for-highlights-buttons-and-interactive-elements-gamer-style-fonts-for-headings-and-titles-smooth-transitions-and-animations-throughout-the-interface-and-ensure-full-mobile-responsiveness-for-all-pages",
+      "featureTitle": "Apply dark gaming theme design with black background (#000000 or very dark gray), neon blue (#00D9FF or similar) and purple (#B931FC or similar) accent colors for highlights, buttons, and interactive elements, gamer-style fonts for headings and titles, smooth transitions and animations throughout the interface, and ensure full mobile responsiveness for all pages",
+      "files": [
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-16"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

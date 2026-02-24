@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+    :root {
+        --radius: 0.5rem;
+        --background: 0 0% 0%;
+        --foreground: 0 0% 98%;
+        --card: 0 0% 5%;
+        --card-foreground: 0 0% 98%;
+        --popover: 0 0% 8%;
+        --popover-foreground: 0 0% 98%;
+        --primary: 189 100% 43%;
+        --primary-foreground: 0 0% 0%;
+        --secondary: 285 85% 59%;
+        --secondary-foreground: 0 0% 0%;
+        --muted: 0 0% 15%;
+        --muted-foreground: 0 0% 60%;
+        --accent: 189 100% 43%;
+        --accent-foreground: 0 0% 98%;
+        --destructive: 0 84% 60%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 189 100% 43% / 20%;
+        --input: 189 100% 43% / 15%;
+        --ring: 189 100% 43%;
+        --chart-1: 189 100% 43%;
+        --chart-2: 285 85% 59%;
+        --chart-3: 160 60% 45%;
+        --chart-4: 30 80% 55%;
+        --chart-5: 340 75% 55%;
+    }
+
+    .dark {
+        --background: 0 0% 0%;
+        --foreground: 0 0% 98%;
+        --card: 0 0% 5%;
+        --card-foreground: 0 0% 98%;
+        --popover: 0 0% 8%;
+        --popover-foreground: 0 0% 98%;
+        --primary: 189 100% 43%;
+        --primary-foreground: 0 0% 0%;
+        --secondary: 285 85% 59%;
+        --secondary-foreground: 0 0% 0%;
+        --muted: 0 0% 15%;
+        --muted-foreground: 0 0% 60%;
+        --accent: 189 100% 43%;
+        --accent-foreground: 0 0% 98%;
+        --destructive: 0 84% 60%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 189 100% 43% / 20%;
+        --input: 189 100% 43% / 15%;
+        --ring: 189 100% 43%;
+        --chart-1: 189 100% 43%;
+        --chart-2: 285 85% 59%;
+        --chart-3: 160 60% 45%;
+        --chart-4: 30 80% 55%;
+        --chart-5: 340 75% 55%;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-black text-foreground;
+        font-family: 'Rajdhani', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Orbitron', sans-serif;
+        font-weight: 700;
+    }
+}
+
+@layer utilities {
+    .text-neonBlue {
+        color: #00D9FF;
+    }
+    
+    .text-neonPurple {
+        color: #B931FC;
+    }
+    
+    .bg-neonBlue {
+        background-color: #00D9FF;
+    }
+    
+    .bg-neonPurple {
+        background-color: #B931FC;
+    }
+    
+    .border-neonBlue {
+        border-color: #00D9FF;
+    }
+    
+    .border-neonPurple {
+        border-color: #B931FC;
+    }
+    
+    .bg-darkBg {
+        background-color: #0a0a0a;
+    }
+    
+    .shadow-neonBlue {
+        box-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
+    }
+    
+    .shadow-neonPurple {
+        box-shadow: 0 0 20px rgba(185, 49, 252, 0.5);
+    }
+}

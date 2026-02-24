@@ -1,2 +1,3 @@
-# arcade-arena_2
-Exported from Caffeine project: Arcade Arena
+## Arcade Arena
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

@@ -1,0 +1,418 @@
+{
+  "kind": "build_request",
+  "title": "Create Arcade Arena gaming website with mini-games and social features",
+  "projectName": "Arcade Arena",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Implement user authentication system with Internet Identity integration allowing users to sign up and log in, generating a unique gamer ID for each player upon registration",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "Login / Signup page",
+          "Unique code for each player"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Users can sign up and log in using Internet Identity",
+        "Each user receives a unique gamer ID upon registration",
+        "User session persists across page navigation",
+        "Login/Signup page is accessible from the navigation menu"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Create backend data models and methods in Motoko to store and manage user profiles including username, unique player ID, avatar image URL, total score, and games played count",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "Username",
+          "Unique player ID",
+          "Avatar image",
+          "Total score",
+          "Games played"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend stores user profile data with username, player ID, avatar URL, total score, and games played",
+        "Backend provides methods to create, retrieve, and update user profiles",
+        "Player ID is globally unique and immutable",
+        "Profile data persists across canister upgrades"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Implement friends system in backend allowing users to add friends by entering their unique gamer ID, store friend relationships, and retrieve a user's friends list",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "Add friends using a unique gamer ID",
+          "Friends list"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Users can add friends by providing a valid gamer ID",
+        "Backend validates that gamer ID exists before adding friend",
+        "Backend stores bidirectional friend relationships",
+        "Backend provides method to retrieve a user's complete friends list"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Create backend score tracking system that records game results for Snake, Tic Tac Toe, Memory Card Game, and Number Guessing Game, storing player ID, game type, score, and timestamp for each game played",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "Score tracking",
+          "Simple database or local storage for scores"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend stores game results with player ID, game type, score, and timestamp",
+        "Backend provides methods to submit new game scores",
+        "Backend calculates and updates total score for each player",
+        "Backend increments games played counter for each completed game"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Implement backend leaderboard functionality providing methods to retrieve global top players, friends-only leaderboard filtered by a user's friend list, and weekly top players based on scores from the last 7 days",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "Global leaderboard",
+          "Friends leaderboard",
+          "Weekly top players"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend provides method to retrieve global leaderboard sorted by total score",
+        "Backend provides method to retrieve friends leaderboard for a specific user",
+        "Backend provides method to retrieve weekly leaderboard based on games played in last 7 days",
+        "Leaderboards return player username, player ID, and score"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Build Home Page with hero section displaying title 'Arcade Arena – Play With Friends Online', descriptive text about playing fun browser games, prominent 'Start Playing' call-to-action button, featured games section showing available games, top players preview displaying highest scoring users, and footer with social links",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "Hero section with title \"Arcade Arena – Play With Friends Online\"",
+          "Short description about playing fun browser games",
+          "Call-to-action button Start Playing",
+          "Featured games section",
+          "Top players preview",
+          "Footer with social links"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hero section displays title 'Arcade Arena – Play With Friends Online' prominently",
+        "Descriptive text explains the browser gaming experience",
+        "'Start Playing' button navigates to Games page",
+        "Featured games section displays all available games with thumbnails",
+        "Top players preview shows top 5 users by score",
+        "Footer includes social media links and contact information"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Create Games Page displaying four playable mini-games: Snake, Tic Tac Toe, Memory Card Game, and Number Guessing Game, each with a game selection interface showing game title, description, and play button to launch the selected game",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "Add playable mini-games such as: Snake, Tic Tac Toe, Memory Card Game, Number Guessing Game"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Games page displays all four games in a grid layout",
+        "Each game card shows game title, brief description, and play button",
+        "Clicking play button opens the selected game interface",
+        "User can navigate back to game selection from any game"
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Implement playable Snake game with HTML5 canvas rendering, keyboard arrow controls for snake movement, food collection mechanics that increase snake length and score, collision detection for walls and self-collision ending the game, play button to start, restart button to reset, real-time score display, and smooth animations",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "Snake",
+          "Play button",
+          "Restart button",
+          "Score tracking",
+          "Simple animations"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Snake moves in grid-based pattern controlled by arrow keys",
+        "Snake grows when eating food and score increases",
+        "Game ends on wall collision or self-collision",
+        "Play button starts the game",
+        "Restart button resets game state",
+        "Current score displays during gameplay",
+        "Final score submits to backend upon game completion"
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Implement playable Tic Tac Toe game with 3x3 grid rendering, click-to-place mechanics alternating between X and O, win detection for three in a row horizontally, vertically, or diagonally, draw detection when grid is full, AI opponent or two-player mode, play button to start, restart button to reset, score tracking based on wins, and smooth animations for piece placement",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "Tic Tac Toe",
+          "Play button",
+          "Restart button",
+          "Score tracking",
+          "Simple animations"
+        ]
+      },
+      "acceptanceCriteria": [
+        "3x3 grid displays and accepts player clicks",
+        "Players alternate placing X and O markers",
+        "Game detects win conditions (horizontal, vertical, diagonal)",
+        "Game detects draw when all cells filled with no winner",
+        "Play button starts new game",
+        "Restart button resets board mid-game",
+        "Score awards points for wins and submits to backend"
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Implement playable Memory Card Game with grid of face-down cards, click-to-flip mechanics revealing card images, matching logic that keeps matched pairs face-up and flips non-matching pairs back after brief display, move counter tracking number of attempts, completion detection when all pairs matched, play button to start, restart button to shuffle and reset, score based on number of moves (lower is better), and smooth flip animations",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "Memory Card Game",
+          "Play button",
+          "Restart button",
+          "Score tracking",
+          "Simple animations"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Grid of face-down cards displays (minimum 12 cards, 6 pairs)",
+        "Clicking card flips it face-up to reveal image",
+        "Two flipped cards check for match after brief delay",
+        "Matched pairs remain face-up, non-matches flip back",
+        "Move counter increments with each pair attempt",
+        "Game completes when all pairs matched",
+        "Play button starts game with shuffled cards",
+        "Restart button shuffles and resets during gameplay",
+        "Score based on move count submits to backend"
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "text": "Implement playable Number Guessing Game where system generates random number within configurable range (e.g., 1-100), player submits guesses via input field, system provides feedback ('too high', 'too low', or 'correct'), tracks number of attempts, displays guess history, includes play button to start new game with new random number, restart button to reset current game, score based on number of guesses (lower is better), and smooth feedback animations",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "Number Guessing Game",
+          "Play button",
+          "Restart button",
+          "Score tracking",
+          "Simple animations"
+        ]
+      },
+      "acceptanceCriteria": [
+        "System generates random number within specified range",
+        "Input field accepts player's guess",
+        "System provides 'too high', 'too low', or 'correct' feedback",
+        "Guess history displays all previous attempts",
+        "Attempt counter tracks number of guesses",
+        "Game completes when player guesses correctly",
+        "Play button starts new game with new random number",
+        "Restart button resets current game",
+        "Score based on attempt count submits to backend"
+      ]
+    },
+    {
+      "id": "REQ-12",
+      "text": "Create Friends Page displaying user's friends list with usernames, player IDs, and latest scores, include input field and button to add new friends by entering their unique gamer ID with validation, show each friend's most recent game score, and provide invite friends functionality to share user's own gamer ID",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "Add friends using a unique gamer ID",
+          "Friends list",
+          "Show friends' latest scores",
+          "Invite friends option"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Friends list displays all friends with username, player ID, and latest score",
+        "Input field and add button allow entering gamer ID to add friend",
+        "System validates gamer ID exists before adding",
+        "Each friend entry shows their most recent game score and game type",
+        "Invite button displays user's own gamer ID for sharing",
+        "Empty state message displays when user has no friends"
+      ]
+    },
+    {
+      "id": "REQ-13",
+      "text": "Create Leaderboard Page with three tabs for Global Leaderboard showing all players ranked by total score, Friends Leaderboard showing only user's friends ranked by score, and Weekly Top Players showing highest scorers from last 7 days, each displaying ranking table with position, username, player ID, and score",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "Global leaderboard",
+          "Friends leaderboard",
+          "Weekly top players",
+          "Player score ranking table"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Three tabs switch between Global, Friends, and Weekly leaderboards",
+        "Global leaderboard displays all players sorted by total score",
+        "Friends leaderboard displays only user's friends sorted by score",
+        "Weekly leaderboard displays top players from last 7 days",
+        "Each leaderboard shows rank position, username, player ID, and score",
+        "Current user's entry is highlighted in the list",
+        "Leaderboards display top 50 players with pagination if needed"
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "text": "Create Profile Page displaying user's username, unique player ID, avatar image, total score, games played count, and edit profile button that opens modal or form to update username and avatar URL",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "Username",
+          "Unique player ID",
+          "Avatar image",
+          "Total score",
+          "Games played",
+          "Edit profile option"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Profile page displays username, player ID, avatar, total score, and games played",
+        "Player ID is displayed but not editable",
+        "Edit profile button opens interface to modify username and avatar URL",
+        "Form validates username is not empty before saving",
+        "Updated profile data saves to backend",
+        "Profile page refreshes to show updated information after save"
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "text": "Implement responsive navigation menu accessible on all pages with links to Home, Games, Friends, Leaderboard, and Profile pages, including mobile hamburger menu for smaller screens, logout button when user is authenticated, and login button when user is not authenticated",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "Clean navigation menu",
+          "Responsive layout for mobile and desktop"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Navigation menu displays on all pages",
+        "Menu includes links to Home, Games, Friends, Leaderboard, and Profile",
+        "Active page is highlighted in navigation",
+        "On mobile screens, menu collapses to hamburger icon",
+        "Hamburger menu expands to show all navigation links",
+        "Logout button displays when user is logged in",
+        "Login button displays when user is not logged in"
+      ]
+    },
+    {
+      "id": "REQ-16",
+      "text": "Apply dark gaming theme design with black background (#000000 or very dark gray), neon blue (#00D9FF or similar) and purple (#B931FC or similar) accent colors for highlights, buttons, and interactive elements, gamer-style fonts for headings and titles, smooth transitions and animations throughout the interface, and ensure full mobile responsiveness for all pages",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "Dark gaming theme",
+          "Black background",
+          "Neon blue and purple highlights",
+          "Modern UI",
+          "Smooth animations",
+          "Mobile responsive",
+          "Gamer-style fonts"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All pages use black or very dark background color",
+        "Neon blue and purple colors used for buttons, borders, and highlights",
+        "Headings use gamer-style display fonts",
+        "Hover effects and transitions apply to interactive elements",
+        "All animations run smoothly without jank",
+        "Layout adapts responsively for mobile, tablet, and desktop screens",
+        "Text remains readable on dark backgrounds with sufficient contrast"
+      ]
+    }
+  ],
+  "constraints": [
+    "Use Internet Identity for authentication instead of custom login system",
+    "Store all user data, scores, and friend relationships in backend Motoko canister, not local storage",
+    "All mini-games must be implemented in TypeScript using React components",
+    "Use React state and hooks for game logic, not vanilla JavaScript globals"
+  ],
+  "nonGoals": [
+    "Multiplayer real-time gameplay between connected users",
+    "Voice chat or text chat between players",
+    "Integration with external gaming platforms or social media APIs",
+    "Advanced 3D graphics or Three.js integration for games",
+    "Payment or subscription systems",
+    "Email notifications for friend requests or game invites",
+    "User-generated content or custom game creation"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Gaming-themed hero background with neon blue and purple lighting effects, futuristic digital grid pattern (hero-bg.dim_1920x1080.png)",
+      "Snake game icon showing pixelated green snake on dark background with neon glow (snake-icon.dim_256x256.png)",
+      "Tic Tac Toe game icon with neon blue X and purple O symbols on dark background (tictactoe-icon.dim_256x256.png)",
+      "Memory Card Game icon showing two flipped cards with neon highlights on dark background (memory-icon.dim_256x256.png)",
+      "Number Guessing Game icon with illuminated numbers and question mark on dark background (number-icon.dim_256x256.png)",
+      "Default avatar placeholder with neon outline, futuristic gamer mask or helmet design (default-avatar.dim_200x200.png)",
+      "Trophy icon with neon glow for leaderboard and achievements (trophy-icon.dim_128x128.png)"
+    ],
+    "edits": []
+  }
+}

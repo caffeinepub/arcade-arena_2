@@ -1,0 +1,336 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-23T23:59:30.927Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 16,
+    "implemented": 12,
+    "items": [
+      {
+        "id": "REQ-1",
+        "summary": "Implement user authentication system with Internet Identity integration allowing users to sign up and log in, generating a unique gamer ID for each player upon registration",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/auth/AuthProvider.tsx",
+          "frontend/src/components/auth/LoginPage.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-10",
+        "summary": "Implement playable Memory Card Game with grid of face-down cards, click-to-flip mechanics revealing card images, matching logic that keeps matched pairs face-up and flips non-matching pairs back after brief display, move counter tracking number of attempts, completion detection when all pairs matched, play button to start, restart button to shuffle and reset, score based on number of moves (lower is better), and smooth flip animations",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/games/MemoryCardGame.tsx",
+          "frontend/src/hooks/useMemoryGame.ts",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/games/MemoryCardGame.tsx",
+          "frontend/src/hooks/useMemoryGame.ts",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-11",
+        "summary": "Implement playable Number Guessing Game where system generates random number within configurable range (e.g., 1-100), player submits guesses via input field, system provides feedback ('too high', 'too low', or 'correct'), tracks number of attempts, displays guess history, includes play button to start new game with new random number, restart button to reset current game, score based on number of guesses (lower is better), and smooth feedback animations",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/games/NumberGuessingGame.tsx",
+          "frontend/src/hooks/useNumberGuessing.ts",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/games/NumberGuessingGame.tsx",
+          "frontend/src/hooks/useNumberGuessing.ts",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-12",
+        "summary": "Create Friends Page displaying user's friends list with usernames, player IDs, and latest scores, include input field and button to add new friends by entering their unique gamer ID with validation, show each friend's most recent game score, and provide invite friends functionality to share user's own gamer ID",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/FriendsPage.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/FriendsPage.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-13",
+        "summary": "Create Leaderboard Page with three tabs for Global Leaderboard showing all players ranked by total score, Friends Leaderboard showing only user's friends ranked by score, and Weekly Top Players showing highest scorers from last 7 days, each displaying ranking table with position, username, player ID, and score",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/LeaderboardPage.tsx",
+          "frontend/src/components/leaderboard/LeaderboardTable.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/LeaderboardPage.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-14",
+        "summary": "Create Profile Page displaying user's username, unique player ID, avatar image, total score, games played count, and edit profile button that opens modal or form to update username and avatar URL",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/ProfilePage.tsx",
+          "frontend/src/components/profile/EditProfileModal.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/ProfilePage.tsx",
+          "frontend/src/components/profile/EditProfileModal.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-15",
+        "summary": "Implement responsive navigation menu accessible on all pages with links to Home, Games, Friends, Leaderboard, and Profile pages, including mobile hamburger menu for smaller screens, logout button when user is authenticated, and login button when user is not authenticated",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/layout/Navigation.tsx",
+          "frontend/src/components/layout/Layout.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/layout/Navigation.tsx",
+          "frontend/src/components/layout/Layout.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-16",
+        "summary": "Apply dark gaming theme design with black background (#000000 or very dark gray), neon blue (#00D9FF or similar) and purple (#B931FC or similar) accent colors for highlights, buttons, and interactive elements, gamer-style fonts for headings and titles, smooth transitions and animations throughout the interface, and ensure full mobile responsiveness for all pages",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/index.css",
+          "frontend/tailwind.config.js"
+        ],
+        "matchedFiles": [
+          "frontend/src/index.css",
+          "frontend/tailwind.config.js"
+        ]
+      },
+      {
+        "id": "REQ-2",
+        "summary": "Create backend data models and methods in Motoko to store and manage user profiles including username, unique player ID, avatar image URL, total score, and games played count",
+        "status": "unknown",
+        "plannedFiles": [],
+        "matchedFiles": []
+      },
+      {
+        "id": "REQ-3",
+        "summary": "Implement friends system in backend allowing users to add friends by entering their unique gamer ID, store friend relationships, and retrieve a user's friends list",
+        "status": "unknown",
+        "plannedFiles": [],
+        "matchedFiles": []
+      },
+      {
+        "id": "REQ-4",
+        "summary": "Create backend score tracking system that records game results for Snake, Tic Tac Toe, Memory Card Game, and Number Guessing Game, storing player ID, game type, score, and timestamp for each game played",
+        "status": "unknown",
+        "plannedFiles": [],
+        "matchedFiles": []
+      },
+      {
+        "id": "REQ-5",
+        "summary": "Implement backend leaderboard functionality providing methods to retrieve global top players, friends-only leaderboard filtered by a user's friend list, and weekly top players based on scores from the last 7 days",
+        "status": "unknown",
+        "plannedFiles": [],
+        "matchedFiles": []
+      },
+      {
+        "id": "REQ-6",
+        "summary": "Build Home Page with hero section displaying title 'Arcade Arena – Play With Friends Online', descriptive text about playing fun browser games, prominent 'Start Playing' call-to-action button, featured games section showing available games, top players preview displaying highest scoring users, and footer with social links",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/HomePage.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/HomePage.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-7",
+        "summary": "Create Games Page displaying four playable mini-games: Snake, Tic Tac Toe, Memory Card Game, and Number Guessing Game, each with a game selection interface showing game title, description, and play button to launch the selected game",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/pages/GamesPage.tsx",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/pages/GamesPage.tsx",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-8",
+        "summary": "Implement playable Snake game with HTML5 canvas rendering, keyboard arrow controls for snake movement, food collection mechanics that increase snake length and score, collision detection for walls and self-collision ending the game, play button to start, restart button to reset, real-time score display, and smooth animations",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/games/SnakeGame.tsx",
+          "frontend/src/hooks/useSnakeGame.ts",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/games/SnakeGame.tsx",
+          "frontend/src/hooks/useSnakeGame.ts",
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-9",
+        "summary": "Implement playable Tic Tac Toe game with 3x3 grid rendering, click-to-place mechanics alternating between X and O, win detection for three in a row horizontally, vertically, or diagonally, draw detection when grid is full, AI opponent or two-player mode, play button to start, restart button to reset, score tracking based on wins, and smooth animations for piece placement",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/games/TicTacToeGame.tsx",
+          "frontend/src/hooks/useTicTacToe.ts",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/games/TicTacToeGame.tsx",
+          "frontend/src/hooks/useTicTacToe.ts",
+          "frontend/src/App.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "backend/main.mo",
+    "build-request.json",
+    "build-template/Dockerfile",
+    "build-template/LICENSE",
+    "build-template/README.md",
+    "build-template/deploy.sh",
+    "build-template/icp.yaml",
+    "build-template/package.json",
+    "build-template/pnpm-lock.yaml",
+    "build-template/pnpm-workspace.yaml",
+    "build-template/scripts/prune-unused-images.js",
+    "build-template/scripts/resize-images.js",
+    "build-template/src/backend/canister.yaml",
+    "build-template/src/backend/system-idl/aaaaa-aa.did",
+    "build-template/src/frontend/canister.yaml",
+    "build-template/src/frontend/components.json",
+    "build-template/src/frontend/env.json",
+    "build-template/src/frontend/eslint-rules/no-bigint-in-query-keys.js",
+    "build-template/src/frontend/eslint-rules/require-internet-identity-provider.js",
+    "build-template/src/frontend/eslint.config.js",
+    "build-template/src/frontend/package.json",
+    "build-template/src/frontend/postcss.config.js",
+    "build-template/src/frontend/src/components/ui/accordion.tsx",
+    "build-template/src/frontend/src/components/ui/alert-dialog.tsx",
+    "build-template/src/frontend/src/components/ui/alert.tsx",
+    "build-template/src/frontend/src/components/ui/aspect-ratio.tsx",
+    "build-template/src/frontend/src/components/ui/avatar.tsx",
+    "build-template/src/frontend/src/components/ui/badge.tsx",
+    "build-template/src/frontend/src/components/ui/breadcrumb.tsx",
+    "build-template/src/frontend/src/components/ui/button.tsx",
+    "build-template/src/frontend/src/components/ui/calendar.tsx",
+    "build-template/src/frontend/src/components/ui/card.tsx",
+    "build-template/src/frontend/src/components/ui/carousel.tsx",
+    "build-template/src/frontend/src/components/ui/chart.tsx",
+    "build-template/src/frontend/src/components/ui/checkbox.tsx",
+    "build-template/src/frontend/src/components/ui/collapsible.tsx",
+    "build-template/src/frontend/src/components/ui/command.tsx",
+    "build-template/src/frontend/src/components/ui/context-menu.tsx",
+    "build-template/src/frontend/src/components/ui/dialog.tsx",
+    "build-template/src/frontend/src/components/ui/drawer.tsx",
+    "build-template/src/frontend/src/components/ui/dropdown-menu.tsx",
+    "build-template/src/frontend/src/components/ui/form.tsx",
+    "build-template/src/frontend/src/components/ui/hover-card.tsx",
+    "build-template/src/frontend/src/components/ui/input-otp.tsx",
+    "build-template/src/frontend/src/components/ui/input.tsx",
+    "build-template/src/frontend/src/components/ui/label.tsx",
+    "build-template/src/frontend/src/components/ui/menubar.tsx",
+    "build-template/src/frontend/src/components/ui/navigation-menu.tsx",
+    "build-template/src/frontend/src/components/ui/pagination.tsx",
+    "build-template/src/frontend/src/components/ui/popover.tsx",
+    "build-template/src/frontend/src/components/ui/progress.tsx",
+    "build-template/src/frontend/src/components/ui/radio-group.tsx",
+    "build-template/src/frontend/src/components/ui/resizable.tsx",
+    "build-template/src/frontend/src/components/ui/scroll-area.tsx",
+    "build-template/src/frontend/src/components/ui/select.tsx",
+    "build-template/src/frontend/src/components/ui/separator.tsx",
+    "build-template/src/frontend/src/components/ui/sheet.tsx",
+    "build-template/src/frontend/src/components/ui/sidebar.tsx",
+    "build-template/src/frontend/src/components/ui/skeleton.tsx",
+    "build-template/src/frontend/src/components/ui/slider.tsx",
+    "build-template/src/frontend/src/components/ui/sonner.tsx",
+    "build-template/src/frontend/src/components/ui/switch.tsx",
+    "build-template/src/frontend/src/components/ui/table.tsx",
+    "build-template/src/frontend/src/components/ui/tabs.tsx",
+    "build-template/src/frontend/src/components/ui/textarea.tsx",
+    "build-template/src/frontend/src/components/ui/toggle-group.tsx",
+    "build-template/src/frontend/src/components/ui/toggle.tsx",
+    "build-template/src/frontend/src/components/ui/tooltip.tsx",
+    "build-template/src/frontend/src/hooks/use-mobile.tsx",
+    "build-template/src/frontend/src/lib/utils.ts",
+    "build-template/src/frontend/tsconfig.json",
+    "build-template/src/frontend/vite.config.js",
+    "build-template/tsconfig.json",
+    "caffeine.lock.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/public/assets/generated/default-avatar.dim_200x200.png",
+    "frontend/public/assets/generated/hero-bg.dim_1920x1080.png",
+    "frontend/public/assets/generated/memory-icon.dim_256x256.png",
+    "frontend/public/assets/generated/number-icon.dim_256x256.png",
+    "frontend/public/assets/generated/snake-icon.dim_256x256.png",
+    "frontend/public/assets/generated/tictactoe-icon.dim_256x256.png",
+    "frontend/public/assets/generated/trophy-icon.dim_128x128.png",
+    "frontend/src/App.tsx",
+    "frontend/src/backend.d.ts",
+    "frontend/src/backend.ts",
+    "frontend/src/components/games/MemoryCardGame.tsx",
+    "frontend/src/components/games/NumberGuessingGame.tsx",
+    "frontend/src/components/games/SnakeGame.tsx",
+    "frontend/src/components/games/TicTacToeGame.tsx",
+    "frontend/src/components/layout/Footer.tsx",
+    "frontend/src/components/layout/Layout.tsx",
+    "frontend/src/components/layout/Navigation.tsx",
+    "frontend/src/components/profile/EditProfileModal.tsx",
+    "frontend/src/config.ts",
+    "frontend/src/declarations/backend.did.d.ts",
+    "frontend/src/declarations/backend.did.js",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/hooks/useMemoryGame.ts",
+    "frontend/src/hooks/useNumberGuessing.ts",
+    "frontend/src/hooks/useQueries.ts",
+    "frontend/src/hooks/useSnakeGame.ts",
+    "frontend/src/hooks/useTicTacToe.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/src/pages/FriendsPage.tsx",
+    "frontend/src/pages/GamesPage.tsx",
+    "frontend/src/pages/HomePage.tsx",
+    "frontend/src/pages/LeaderboardPage.tsx",
+    "frontend/src/pages/LoginPage.tsx",
+    "frontend/src/pages/ProfilePage.tsx",
+    "frontend/src/ui-summary.json",
+    "frontend/src/utils/StorageClient.ts",
+    "frontend/tailwind.config.js",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}
